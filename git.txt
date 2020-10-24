@@ -1,0 +1,487 @@
+Accurent Git
+Paschals-MacBook-Pro-2:Demo paschalonor1$ rm -rf index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md
+Paschals-MacBook-Pro-2:Demo paschalonor1$ echo "This is a new file created for my accurent interview" > index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md	index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
+This is a new file created for my accurent interview
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git add index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+Paschals-MacBook-Pro-2:Demo paschalonor1$ 
+Paschals-MacBook-Pro-2:Demo paschalonor1$ vim index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git add index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status -s
+M  index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status -v
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+diff --git a/index.html b/index.html
+index e69de29..fbdf8c9 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,67 @@
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md	index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ rm -rf index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md
++Paschals-MacBook-Pro-2:Demo paschalonor1$ echo "This is a new file created for my accurent interview" > index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md	index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
++This is a new file created for my accurent interview
++Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
++On branch master
++Your branch is up to date with 'origin/master'.
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++	modified:   index.html
++
++no changes added to commit (use "git add" and/or "git commit -a")
++Paschals-MacBook-Pro-2:Demo paschalonor1$ git add index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
++On branch master
++Your branch is up to date with 'origin/master'.
++
++Changes to be committed:
++  (use "git restore --staged <file>..." to unstage)
++	modified:   index.html
++
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md	index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ vim index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
++This is a new file created for my accurent interview
++
++Paschals-MacBook-Pro-2:Accurent-Git paschalonor1$ cd Accurent-Git/Demo
++-bash: cd: Accurent-Git/Demo: No such file or directory
++Paschals-MacBook-Pro-2:Accurent-Git paschalonor1$ cd Demo
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md	index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ rm -rf index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md
++Paschals-MacBook-Pro-2:Demo paschalonor1$ echo "This is a new file created for my accurent interview" > index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md	index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
++This is a new file created for my accurent interview
++Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
++On branch master
++Your branch is up to date with 'origin/master'.
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++	modified:   index.html
++
++no changes added to commit (use "git add" and/or "git commit -a")
++Paschals-MacBook-Pro-2:Demo paschalonor1$ git add index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
++On branch master
++Your branch is up to date with 'origin/master'.
++
++Changes to be committed:
++  (use "git restore --staged <file>..." to unstage)
++	modified:   index.html
++
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git log
+commit 8b1d0357adea05786d6356ad054ff7a31d32faca (HEAD -> master, origin/master, origin/HEAD)
+Author: Similimodo <paschalonor@gmail.com>
+Date:   Fri Sep 18 09:44:45 2020 -0500
+
+    Added index.html
+
+commit eff516fed970184315a9f31e911da9a28625b0c1
+Author: Similimodo <50338859+Similimodo@users.noreply.github.com>
+Date:   Fri Sep 18 07:15:34 2020 -0500
+
+    Update Readme.md
+
+commit c2fad55f0d332edaf0d7c1d010370f6cfce62bf9
+Author: Similimodo <50338859+Similimodo@users.noreply.github.com>
+Date:   Fri Sep 18 07:13:53 2020 -0500
+
+    Create Readme.md
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git commit -m "Accurent proof of concept"
+[master 3f9545d] Accurent proof of concept
+ 1 file changed, 67 insertions(+)
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git remote add origin https://github.com/Similimodo/Demo.git
+fatal: remote origin already exists.
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 708 bytes | 708.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Similimodo/Demo.git
+   8b1d035..3f9545d  master -> master
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git remote -v
+origin	https://github.com/Similimodo/Demo.git (fetch)
+origin	https://github.com/Similimodo/Demo.git (push)
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git tag
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git show
+commit 3f9545dd641b4a376caef7ca78d5fa822e8ee8b9 (HEAD -> master, origin/master, origin/HEAD)
+Author: Paschal Onor <paschalonor@gmail.com>
+Date:   Thu Oct 22 21:59:24 2020 -0500
+
+    Accurent proof of concept
+
+diff --git a/index.html b/index.html
+index e69de29..fbdf8c9 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,67 @@
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md      index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ rm -rf index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md
++Paschals-MacBook-Pro-2:Demo paschalonor1$ echo "This is a new file created for my accurent interview" > index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md      index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
++This is a new file created for my accurent interview
++Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
++On branch master
++Your branch is up to date with 'origin/master'.
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git branch Accurent
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git log --oneline --decorate
+3f9545d (HEAD -> master, origin/master, origin/HEAD, Accurent) Accurent proof of concept
+8b1d035 Added index.html
+eff516f Update Readme.md
+c2fad55 Create Readme.md
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git checkout Accurent
+Switched to branch 'Accurent'
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch Accurent
+nothing to commit, working tree clean
+Paschals-MacBook-Pro-2:Demo paschalonor1$ vim index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git add index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git commit -m "Testing a new branch"
+[Accurent a047b98] Testing a new branch
+ 1 file changed, 48 insertions(+)
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch Accurent
+nothing to commit, working tree clean
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md	index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ rm -rf index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md
+Paschals-MacBook-Pro-2:Demo paschalonor1$ echo "This is a new file created for my accurent interview" > index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md	index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
+This is a new file created for my accurent interview
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git add index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md	index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ vim index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
+This is a new file created for my accurent interview
+
+Paschals-MacBook-Pro-2:Accurent-Git paschalonor1$ cd Accurent-Git/Demo
+-bash: cd: Accurent-Git/Demo: No such file or directory
+Paschals-MacBook-Pro-2:Accurent-Git paschalonor1$ cd Demo
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md	index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ rm -rf index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md
+Paschals-MacBook-Pro-2:Demo paschalonor1$ echo "This is a new file created for my accurent interview" > index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md	index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
+This is a new file created for my accurent interview
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git add index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git checkout Accurent
+Switched to branch 'Accurent'
+Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md	index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ rm -rf index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md
+Paschals-MacBook-Pro-2:Demo paschalonor1$ echo "This is a new file created for my accurent interview" > index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md	index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
+This is a new file created for my accurent interview
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git add index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md	index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ vim index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
+This is a new file created for my accurent interview
+
+Paschals-MacBook-Pro-2:Accurent-Git paschalonor1$ cd Accurent-Git/Demo
+-bash: cd: Accurent-Git/Demo: No such file or directory
+Paschals-MacBook-Pro-2:Accurent-Git paschalonor1$ cd Demo
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md	index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ rm -rf index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md
+Paschals-MacBook-Pro-2:Demo paschalonor1$ echo "This is a new file created for my accurent interview" > index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
+Readme.md	index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
+This is a new file created for my accurent interview
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git add index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+git tag
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git show
+commit 3f9545dd641b4a376caef7ca78d5fa822e8ee8b9 (HEAD -> master, origin/master, origin/HEAD)
+Author: Paschal Onor <paschalonor@gmail.com>
+Date:   Thu Oct 22 21:59:24 2020 -0500
+
+    Accurent proof of concept
+
+diff --git a/index.html b/index.html
+index e69de29..fbdf8c9 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,67 @@
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md      index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ rm -rf index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md
++Paschals-MacBook-Pro-2:Demo paschalonor1$ echo "This is a new file created for my accurent interview" > index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ ls
++Readme.md      index.html
++Paschals-MacBook-Pro-2:Demo paschalonor1$ cat index.html
++This is a new file created for my accurent interview
++Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
++On branch master
++Your branch is up to date with 'origin/master'.
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git branch Accurent
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git log --oneline --decorate
+3f9545d (HEAD -> master, origin/master, origin/HEAD, Accurent) Accurent proof of concept
+8b1d035 Added index.html
+eff516f Update Readme.md
+c2fad55 Create Readme.md
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git checkout Accurent
+Switched to branch 'Accurent'
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch Accurent
+nothing to commit, working tree clean
+Paschals-MacBook-Pro-2:Demo paschalonor1$ 
+
+Paschals-MacBook-Pro-2:Demo paschalonor1$ cat .git/HEAD
+ref: refs/heads/Accurent
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git merge Accurent
+Updating 3f9545d..a047b98
+Fast-forward
+ index.html | 48 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 48 insertions(+)
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git branch -d Accurent
+Deleted branch Accurent (was a047b98).
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git log
+commit a047b989652a9210419789f6c179e88eef80b044 (HEAD -> master)
+Author: Paschal Onor <paschalonor@gmail.com>
+Date:   Fri Oct 23 14:08:46 2020 -0500
+
+    Testing a new branch
+
+commit 3f9545dd641b4a376caef7ca78d5fa822e8ee8b9 (origin/master, origin/HEAD)
+Author: Paschal Onor <paschalonor@gmail.com>
+Date:   Thu Oct 22 21:59:24 2020 -0500
+
+    Accurent proof of concept
+
+commit 8b1d0357adea05786d6356ad054ff7a31d32faca
+Author: Similimodo <paschalonor@gmail.com>
+Date:   Fri Sep 18 09:44:45 2020 -0500
+
+    Added index.html
+
+commit eff516fed970184315a9f31e911da9a28625b0c1
+Author: Similimodo <50338859+Similimodo@users.noreply.github.com>
+Date:   Fri Sep 18 07:15:34 2020 -0500
+
+    Update Readme.md
+
+commit c2fad55f0d332edaf0d7c1d010370f6cfce62bf9
+Author: Similimodo <50338859+Similimodo@users.noreply.github.com>
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git diff
+Paschals-MacBook-Pro-2:Demo paschalonor1$ echo "just check the git diff command for Accurent interview" >> index.html
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git diff
+diff --git a/index.html b/index.html
+index 47c1616..3711ede 100644
+--- a/index.html
++++ b/index.html
+@@ -113,3 +113,4 @@ On branch Accurent
+ nothing to commit, working tree clean
+ Paschals-MacBook-Pro-2:Demo paschalonor1$ 
+ 
++just check the git diff command for Accurent interview
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git gc --auto
+Paschals-MacBook-Pro-2:Demo paschalonor1$ git pull
+Already up to date.
+Paschals-MacBook-Pro-2:Demo paschalonor1$ 
